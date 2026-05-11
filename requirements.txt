@@ -1,6 +1,9 @@
 requests # HTTP library for making requests to the Millionaire API
 python-dotenv # Library for loading environment variables from a .env file
-# --- Local LLM ---
+# --- Local LLM (HuggingFace) ---
 torch # PyTorch deep learning framework
 transformers # Hugging Face transformers library for pre-trained models
 accelerate # Helper library for efficient model loading and inference
+# --- Local LLM (Ollama) ---
+ollama # Python client for Ollama local server
+pandas
