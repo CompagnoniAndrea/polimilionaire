@@ -53,6 +53,7 @@ mlruns/
 .vscode/
 .idea/
 *.code-workspace
+CLAUDE.md
 
 # OS
 .DS_Store
