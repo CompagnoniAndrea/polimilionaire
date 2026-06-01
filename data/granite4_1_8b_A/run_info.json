@@ -1,0 +1,58 @@
+{
+  "model_name": "granite4.1:8b",
+  "model_config": {
+    "orchestrator": "granite4.1:8b",
+    "math": "granite4.1:8b",
+    "knowledge": "granite4.1:8b"
+  },
+  "reasoning": false,
+  "comment": "test granite4.1:8b - 5 run",
+  "techniques": [
+    "multi-agent",
+    "RAG-wikipedia",
+    "RAG-duckduckgo",
+    "tool-calling"
+  ],
+  "timestamp": "2026-05-31T22:22:30.757311",
+  "num_runs_per_competition": 5,
+  "total_competitions": 6,
+  "overall_accuracy": 0.24,
+  "comp_info": {
+    "0": {
+      "name": "Entertainment",
+      "accuracy": 0.0933,
+      "avg_level": 1.4,
+      "avg_earned": 240.0
+    },
+    "1": {
+      "name": "Ancient History and Politics",
+      "accuracy": 0.2133,
+      "avg_level": 3.2,
+      "avg_earned": 1860.0
+    },
+    "2": {
+      "name": "Science and Nature",
+      "accuracy": 0.3733,
+      "avg_level": 5.6,
+      "avg_earned": 1800.0
+    },
+    "3": {
+      "name": "Maths",
+      "accuracy": 0.0267,
+      "avg_level": 0.4,
+      "avg_earned": 40.0
+    },
+    "4": {
+      "name": "Philosophy and Psychology",
+      "accuracy": 0.64,
+      "avg_level": 9.6,
+      "avg_earned": 233640.0
+    },
+    "5": {
+      "name": "News",
+      "accuracy": 0.0933,
+      "avg_level": 1.4,
+      "avg_earned": 240.0
+    }
+  }
+}

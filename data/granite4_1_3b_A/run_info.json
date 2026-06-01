@@ -1,0 +1,18 @@
+{
+  "model_name": "granite4.1:3b",
+  "model_config": {
+    "orchestrator": "granite4.1:3b",
+    "math": "granite4.1:3b",
+    "knowledge": "granite4.1:3b"
+  },
+  "reasoning": false,
+  "comment": "test granite4.1:3b - 1 run",
+  "techniques": [
+    "multi-agent",
+    "RAG-wikipedia",
+    "RAG-duckduckgo",
+    "tool-calling"
+  ],
+  "timestamp": "2026-05-31T21:10:21.262191",
+  "num_runs_per_competition": 5
+}

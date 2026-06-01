@@ -33,7 +33,7 @@ build/
 *.hdf5
 *.npy
 *.npz
-data/
+data/runs
 datasets/
 models/
 checkpoints/

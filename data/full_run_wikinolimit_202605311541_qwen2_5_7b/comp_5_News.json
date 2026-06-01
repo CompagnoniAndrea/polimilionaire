@@ -1,0 +1,613 @@
+{
+  "competition_id": 5,
+  "competition_name": "News",
+  "summary": {
+    "total_attempts": 5,
+    "questions_answered": 12,
+    "avg_level": 1.4,
+    "max_level": 3,
+    "avg_earned": 140.0,
+    "max_earned": 300,
+    "accuracy": 0.0933,
+    "timeout_count": 1,
+    "avg_time_per_question": 17.8299,
+    "max_time": 30.1893
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "earned": 300,
+      "final_level": 3,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "According to the news article published on 2026-05-17, what was the name of the stranded whale that was the subject of the rescue attempt?",
+          "options": {
+            "A": "Tommy",
+            "B": "Timmy",
+            "C": "Benny",
+            "D": "Charlie"
+          },
+          "llm_raw_output": "B",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided, the name of the stranded whale that was the subject of the rescue attempt in May 2026 was Timmy.\n\nThe correct answer is:\nB: Timmy",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "stranded whale rescue 2026-05-17 name"
+                  },
+                  "id": "9c52c05b-05e9-4e1a-8689-f7ece7c75cb0",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "B",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the news article published on 2026-05-17, what was the name of the stranded whale that was the subject of the rescue attempt?\nOptions:\nA: Tommy\nB: Timmy\nC: Benny\nD: Charlie"
+                  },
+                  "id": "61ba85df-0b34-4e8c-8d80-f0dbd7e08560",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "B",
+          "correct": true,
+          "timed_out": false,
+          "time": 13.665134191513062
+        },
+        {
+          "level": 2,
+          "prize": 200,
+          "question_text": "According to the news article published on 2026-05-11, which organization released the data showing the number of alcohol-related deaths in the UK?",
+          "options": {
+            "A": "Alcohol Change UK",
+            "B": "National Health Service (NHS)",
+            "C": "Office of National Statistics (ONS)",
+            "D": "World Health Organization"
+          },
+          "llm_raw_output": "C",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided, the organization that released the data showing the number of alcohol-related deaths in the UK is the Office of National Statistics (ONS).\n\nThe correct answer is:\nC: Office of National Statistics (ONS)",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "news article 2026-05-11 alcohol-related deaths UK organization"
+                  },
+                  "id": "b650af7b-7ad8-42dd-b4b6-73bd6a4f102d",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "C",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the news article published on 2026-05-11, which organization released the data showing the number of alcohol-related deaths in the UK?\nOptions:\nA: Alcohol Change UK\nB: National Health Service (NHS)\nC: Office of National Statistics (ONS)\nD: World Health Organization"
+                  },
+                  "id": "70a0be04-8c87-48b0-82cf-9d9758ab6331",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "C",
+          "correct": true,
+          "timed_out": false,
+          "time": 15.135408163070679
+        },
+        {
+          "level": 3,
+          "prize": 300,
+          "question_text": "According to the article published on 2026-05-16, which organization reported that Germany's child well-being ranking is 'alarming'?",
+          "options": {
+            "A": "UNICEF",
+            "B": "UNHCR",
+            "C": "WHO",
+            "D": "UNESCO"
+          },
+          "llm_raw_output": "A",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the search results, UNICEF reported that Germany's child well-being ranking is 'alarming'. Therefore, the correct answer is:\n\nA: UNICEF\n\nA:",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Germany child well-being ranking alarming 2026-05-16"
+                  },
+                  "id": "b7c6484c-f24a-48c6-b1ab-1d4efa275c78",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "A",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-16, which organization reported that Germany's child well-being ranking is 'alarming'?\nOptions:\nA: UNICEF\nB: UNHCR\nC: WHO\nD: UNESCO"
+                  },
+                  "id": "4d25a3d8-8251-44f2-9471-dbf1fe4077bb",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "A",
+          "correct": true,
+          "timed_out": false,
+          "time": 14.325650453567505
+        },
+        {
+          "level": 4,
+          "prize": 500,
+          "question_text": "On 2026-05-13, what caused Alfredo Carpineti to drive urgently from Shelby Park in Nashville?",
+          "options": {
+            "A": "To find a better view of the total solar eclipse",
+            "B": "To catch a train",
+            "C": "To buy eclipse glasses",
+            "D": "To attend a conference"
+          },
+          "llm_raw_output": "A",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the provided information, it appears that Alfredo Carpineti drove urgently from Shelby Park in Nashville on 2026-05-13 to witness a total solar eclipse. The relevant snippet mentions:\n\n\"But nothing prepared me for those few minutes in 2017 when the world fell silent ... I have never driven with more determination than when rushing away from Shelby Park in Nashville.\"\n\nHowever, this seems to be referring to an event that occurred in 2017, not 2026. The snippet also mentions a partial solar eclipse on August 12, 2026, but it does not specify the exact date of May 13, 2026.\n\nGiven this context and the available information, the most likely answer is:\n\nA: To find a better view of the total solar eclipse\n\nSo my final answer is:\nA",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Alfredo Carpineti drive urgently Shelby Park Nashville 2026-05-13"
+                  },
+                  "id": "4bea4a40-1221-4c7f-9aef-951eb8b90f51",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Alfredo Carpineti drive urgently Shelby Park Nashville 2026-05-13 total solar eclipse"
+                  },
+                  "id": "06fbe018-ce07-468c-9a94-b2e6d3cb1131",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "A",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "On 2026-05-13, what caused Alfredo Carpineti to drive urgently from Shelby Park in Nashville?\nA: To find a better view of the total solar eclipse\nB: To catch a train\nC: To buy eclipse glasses\nD: To attend a conference"
+                  },
+                  "id": "c5b72fd9-4f88-4aef-abbc-5c5704841644",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "A",
+          "correct": null,
+          "timed_out": true,
+          "time": 30.189307689666748
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "earned": 300,
+      "final_level": 3,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "On 2026-05-17, the article mentioned that Christian Zionism thrived in the US over the past three decades and had significant support from which group?",
+          "options": {
+            "A": "Liberal Democrats",
+            "B": "Jewish Community Leaders",
+            "C": "Progressive Muslims",
+            "D": "Conservative Evangelical Christians"
+          },
+          "llm_raw_output": "D",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided, it seems that Christian Zionism has significant support from the evangelical wing of American Protestantism. Therefore, the correct answer is:\n\nD: Conservative Evangelical Christians\n\nA: Liberal Democrats - This group is more associated with secular or progressive politics.\nB: Jewish Community Leaders - They are part of the Jewish community and not primarily supporters of Christian Zionism.\nC: Progressive Muslims - There isn't a strong historical association between progressive Muslims and Christian Zionism.\n\nThe answer is D.",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Christian Zionism thrived in the US over the past three decades and had significant support from which group 2026-05-17"
+                  },
+                  "id": "58ca1e64-039c-4159-ba40-21c9aff689e6",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "D",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "On 2026-05-17, the article mentioned that Christian Zionism thrived in the US over the past three decades and had significant support from which group?\nOptions:\nA: Liberal Democrats\nB: Jewish Community Leaders\nC: Progressive Muslims\nD: Conservative Evangelical Christians"
+                  },
+                  "id": "c283ac6f-bca7-4b63-80b3-b93ddc431b95",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "D",
+          "correct": true,
+          "timed_out": false,
+          "time": 23.059592485427856
+        },
+        {
+          "level": 2,
+          "prize": 200,
+          "question_text": "According to the article published on 2026-05-17, what has led to a decline in beer consumption among young Czechs?",
+          "options": {
+            "A": "Decrease in beer production",
+            "B": "Increased taxes on beer",
+            "C": "Higher prices of beer",
+            "D": "Greater emphasis on moderate consumption and healthier lifestyles"
+          },
+          "llm_raw_output": "D",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided from DW.com and Craft Beer News and Trends, there is no direct mention of specific reasons leading to a decline in beer consumption among young Czechs as per the article published on 2026-05-17. However, we can infer that factors such as increased awareness about moderate consumption and healthier lifestyles might be contributing to this trend.\n\nGiven the options:\nA: Decrease in beer production\nB: Increased taxes on beer\nC: Higher prices of beer\nD: Greater emphasis on moderate consumption and healthier lifestyles\n\nThe most relevant answer based on the snippets provided is:\n\nD: Greater emphasis on moderate consumption and healthier lifestyles\n\nTherefore, my response is D.",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026-05-17 decline in beer consumption among young Czechs"
+                  },
+                  "id": "6c1af023-8924-40b5-93b7-389992ccede5",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "D",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-17, what has led to a decline in beer consumption among young Czechs?\nOptions:\nA: Decrease in beer production\nB: Increased taxes on beer\nC: Higher prices of beer\nD: Greater emphasis on moderate consumption and healthier lifestyles"
+                  },
+                  "id": "fd6af1b5-3248-4ddb-a5f5-84e10c547894",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "D",
+          "correct": true,
+          "timed_out": false,
+          "time": 20.506707906723022
+        },
+        {
+          "level": 3,
+          "prize": 300,
+          "question_text": "On 2026-05-16, the article reported that there was a shortage of around 1.4 million apartments in which price ranges?",
+          "options": {
+            "A": "Only middle price range",
+            "B": "Lower and middle price ranges",
+            "C": "Upper and luxury price ranges",
+            "D": "High and very high price ranges"
+          },
+          "llm_raw_output": "B",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided, it seems that the shortage of apartments in 2026-05-16 is particularly affecting lower and middle price ranges. Therefore, the correct answer is:\n\nB: Lower and middle price ranges.\n\nD, A, and C can be ruled out as they do not match the context given by the search results.\n\nThe answer is B.",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "shortage of apartments 2026-05-16 price range"
+                  },
+                  "id": "c8b50669-e79c-4e61-a9b6-85e3660f9f5b",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "B",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "On 2026-05-16, the article reported that there was a shortage of around 1.4 million apartments in which price ranges?\nOptions:\nA: Only middle price range\nB: Lower and middle price ranges\nC: Upper and luxury price ranges\nD: High and very high price ranges"
+                  },
+                  "id": "44857d5a-bf77-4fbf-b533-1ac3f69c8e5f",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "B",
+          "correct": true,
+          "timed_out": false,
+          "time": 14.947638273239136
+        },
+        {
+          "level": 4,
+          "prize": 500,
+          "question_text": "According to the article published on 2026-05-14, who hired Donald Trump's personal lawyer to defend the Indian billionaire against fraud charges?",
+          "options": {
+            "A": "Lisa Miller",
+            "B": "Gautam Adani",
+            "C": "Narendra Modi",
+            "D": "Robert J Giuffra Jr"
+          },
+          "llm_raw_output": "D",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided by the search results, it appears that Donald Trump's personal lawyer hired to defend the Indian billionaire against fraud charges is Robert J Giuffra Jr.\n\nThe correct answer is:\nD: Robert J Giuffra Jr",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026-05-14 Donald Trump's personal lawyer hired to defend Indian billionaire fraud charges"
+                  },
+                  "id": "4eec2aff-5b7c-412f-acc3-29d65b2c9d61",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "D",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-14, who hired Donald Trump's personal lawyer to defend the Indian billionaire against fraud charges?\nOptions:\nA: Lisa Miller\nB: Gautam Adani\nC: Narendra Modi\nD: Robert J Giuffra Jr"
+                  },
+                  "id": "50f78b26-5e05-47c0-bcfb-4ba2dd53e33a",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "D",
+          "correct": false,
+          "timed_out": false,
+          "time": 15.351383209228516
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "earned": 0,
+      "final_level": 0,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "According to the article published on 2026-05-18, who is hosting a pulled pork and chicken dinner for his supporters in Kentucky's fourth congressional district?",
+          "options": {
+            "A": "Thomas Massie",
+            "B": "Ed Gallrein",
+            "C": "Donald Trump",
+            "D": "Pete Hegseth"
+          },
+          "llm_raw_output": "B",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided from DuckDuckGo search results, there is no direct mention of a pulled pork and chicken dinner event hosted by any of the individuals listed in the options. However, Ed Gallrein's campaign seems to be active in Kentucky's fourth congressional district.\n\nGiven the context and the available information, none of the options A, B, C, or D are directly supported by the search results. Since we need to choose from the given options based on the closest match:\n\nThe answer is:\nB: Ed Gallrein\n\nD",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026-05-18 pulled pork and chicken dinner Kentucky's fourth congressional district"
+                  },
+                  "id": "4cb87b4c-4708-4d5c-a65f-7ae703979bc6",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "B",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-18, who is hosting a pulled pork and chicken dinner for his supporters in Kentucky's fourth congressional district?\nOptions:\nA: Thomas Massie\nB: Ed Gallrein\nC: Donald Trump\nD: Pete Hegseth"
+                  },
+                  "id": "6d77164a-5d23-4275-9303-8acf5211aa18",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "B",
+          "correct": false,
+          "timed_out": false,
+          "time": 17.23401975631714
+        }
+      ]
+    },
+    {
+      "attempt": 4,
+      "earned": 0,
+      "final_level": 0,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "According to the article published on 2026-05-08, which party in Germany reached a new record high with 27% nationwide support?",
+          "options": {
+            "A": "Greens",
+            "B": "SPD",
+            "C": "AfD",
+            "D": "CDU"
+          },
+          "llm_raw_output": "D",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided by the search results, there is no specific mention of a German election or poll from May 8, 2026. The closest relevant data are from an election in February 2025 and some current polls for the next expected election in 2029.\n\nGiven that we don't have direct information about the exact event on 2026-05-08, let's consider the context of the question. The party reaching a new record high with 27% nationwide support is likely to be one of the major parties mentioned in recent polls.\n\nThe CDU (Christian Democratic Union) has been leading in some polls and could potentially reach such a level. However, without specific data for that exact date, we can't definitively say which party it was.\n\nGiven the options:\nA: Greens\nB: SPD\nC: AfD\nD: CDU\n\nSince the CDU is often at the forefront of German election polls and has been leading in recent trends, let's assume the correct answer based on this context:\n\nD",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "German election results 2026-05-08"
+                  },
+                  "id": "81148e04-39a9-490d-986c-6c41ec7b8808",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "D",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-08, which party in Germany reached a new record high with 27% nationwide support?\nOptions:\nA: Greens\nB: SPD\nC: AfD\nD: CDU"
+                  },
+                  "id": "5bba2eef-15b0-4c84-b0d3-4f6bb7a23212",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "D",
+          "correct": false,
+          "timed_out": false,
+          "time": 23.090779066085815
+        }
+      ]
+    },
+    {
+      "attempt": 5,
+      "earned": 100,
+      "final_level": 1,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "According to the article published on 2026-05-14, which country announced the exemption from visa bond requirements for FIFA World Cup ticket holders?",
+          "options": {
+            "A": "Germany",
+            "B": "Canada",
+            "C": "United States",
+            "D": "Mexico"
+          },
+          "llm_raw_output": "C",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided in the articles, the United States announced the exemption from visa bond requirements for FIFA World Cup ticket holders.\n\nThe correct answer is:\nC: United States",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "visa bond exemption for FIFA World Cup 2026 announcement 2026-05-14"
+                  },
+                  "id": "84a20c2d-cf87-4831-9adc-15feb224f2cd",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "C",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-14, which country announced the exemption from visa bond requirements for FIFA World Cup ticket holders?\nOptions:\nA: Germany\nB: Canada\nC: United States\nD: Mexico"
+                  },
+                  "id": "3e3b2f95-7c61-43dd-9e12-ff6886d149cb",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "C",
+          "correct": true,
+          "timed_out": false,
+          "time": 13.046910285949707
+        },
+        {
+          "level": 2,
+          "prize": 200,
+          "question_text": "According to the report published on 2026-05-18, where did the first known weaponised drone attack take place in Colombia?",
+          "options": {
+            "A": "Bogotá",
+            "B": "Antioquia",
+            "C": "Putumayo",
+            "D": "Cauca"
+          },
+          "llm_raw_output": "C",
+          "agent_trace": {
+            "knowledge": {
+              "model": "qwen2.5:7b",
+              "raw_output": "Based on the information provided, the first known weaponised drone attack in Colombia took place in Putumayo. The report mentions that multiple additional casualties have been recorded in the same operational period, and it specifically notes that this is the first confirmed drone-related death in Colombia's ongoing internal conflict.\n\nThe answer is C: Putumayo.",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "first known weaponised drone attack in Colombia 2026-05-18"
+                  },
+                  "id": "e4ecd505-a275-48f4-9094-5965ba7d76f8",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "qwen2.5:7b",
+              "raw_output": "C",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the report published on 2026-05-18, where did the first known weaponised drone attack take place in Colombia?\nOptions:\nA: Bogotá\nB: Antioquia\nC: Putumayo\nD: Cauca"
+                  },
+                  "id": "6ad2c918-7937-46ff-af8f-6f5e2b03b902",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "C",
+          "correct": false,
+          "timed_out": false,
+          "time": 13.406137466430664
+        }
+      ]
+    }
+  ]
+}

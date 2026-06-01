@@ -1,0 +1,680 @@
+{
+  "competition_id": 5,
+  "competition_name": "News",
+  "summary": {
+    "total_attempts": 5,
+    "questions_answered": 12,
+    "avg_level": 1.4,
+    "max_level": 5,
+    "avg_earned": 240.0,
+    "max_earned": 1000,
+    "accuracy": 0.0933,
+    "timeout_count": 5,
+    "avg_time_per_question": 25.8923,
+    "max_time": 41.8084
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "earned": 1000,
+      "final_level": 5,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "What event occurred on 2026-05-14 that revealed Viktor Orban's luxurious lifestyle to the public?",
+          "options": {
+            "A": "A public speech by Viktor Orban",
+            "B": "A government audit",
+            "C": "A press conference",
+            "D": "The release of videos by Peter Magyar"
+          },
+          "llm_raw_output": "D",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "The event that exposed Viktor Orban's luxurious lifestyle on **2026‑05‑14** was the release of videos by **Peter Magyar**, who toured and publicly displayed Orban’s opulent residence and ministries.  \n\nTherefore, the correct choice is:\n\nD  \n\n(Exactly one character as required.)",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Viktor Orán luxurious lifestyle 2026-05-14 Peter Magyar videos"
+                  },
+                  "id": "95c6406d-2c8f-45cd-9644-0b608ecd5f64",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "D",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "What event occurred on 2026-05-14 that revealed Viktor Orban's luxurious lifestyle to the public?\nA: A public speech by Viktor Orban\nB: A government audit\nC: A press conference\nD: The release of videos by Peter Magyar"
+                  },
+                  "id": "c79226df-c5d2-475f-8441-046cd393331c",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "D",
+          "correct": true,
+          "timed_out": false,
+          "time": 15.500670909881592
+        },
+        {
+          "level": 2,
+          "prize": 200,
+          "question_text": "According to the article published on 2026-05-07, which small German town near the Czech border is on edge over the potential US troop withdrawal?",
+          "options": {
+            "A": "Frankfurt",
+            "B": "Vilseck",
+            "C": "Hamburg",
+            "D": "Berlin"
+          },
+          "llm_raw_output": "B",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "The article dated 2026‑05‑07 identifies the town as **Vilseck**, a small German municipality near the Czech border that is experiencing anxiety over a possible U.S. troop withdrawal.\n\n**Answer:** B",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026-05-07 article US troop withdrawal small German town near Czech border"
+                  },
+                  "id": "9e0964ea-f8f6-4186-b9ad-868614beb7b4",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "B",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-07, which small German town near the Czech border is on edge over the potential US troop withdrawal?\nA: Frankfurt\nB: Vilseck\nC: Hamburg\nD: Berlin"
+                  },
+                  "id": "c23d87c5-38b6-49b3-b044-ef826c18b84c",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "B",
+          "correct": true,
+          "timed_out": false,
+          "time": 15.09525752067566
+        },
+        {
+          "level": 3,
+          "prize": 300,
+          "question_text": "According to the news report published on 2026-05-17, which country reported a drone strike near its nuclear power plant?",
+          "options": {
+            "A": "Iraq",
+            "B": "Iran",
+            "C": "United Arab Emirates",
+            "D": "Saudi Arabia"
+          },
+          "llm_raw_output": "C",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "The news report from May 17 2026 describes a drone strike near a nuclear power plant in the **United Arab Emirates** (the Barakah Nuclear Energy Plant).  \n\nTherefore, the correct choice is:\n\nC  \n\n(United Arab Emirates)",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "drone strike near nuclear power plant May 17 2026"
+                  },
+                  "id": "6a9b65eb-2f66-44fe-9d93-1b40b40135cf",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "C",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the news report published on 2026-05-17, which country reported a drone strike near its nuclear power plant?\nA: Iraq\nB: Iran\nC: United Arab Emirates\nD: Saudi Arabia"
+                  },
+                  "id": "61278589-6a43-4f14-8ac4-893e6d56cf2b",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "C",
+          "correct": true,
+          "timed_out": false,
+          "time": 17.32723355293274
+        },
+        {
+          "level": 4,
+          "prize": 500,
+          "question_text": "On 2026-05-17, which patient praised the new less invasive womb cancer test at Ipswich Hospital?",
+          "options": {
+            "A": "Alice Cunningham",
+            "B": "Angela Ransby",
+            "C": "Dr. Smith",
+            "D": "Wendy MacNab"
+          },
+          "llm_raw_output": "B",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "The article from May 17 2026 reports that **Angela Ransby** praised the new less invasive womb cancer test at Ipswich Hospital.  \n\nTherefore, the correct choice is:\n\nA: Alice Cunningham  \nB: Angela Ransby  \nC: Dr. Smith  \nD: Wendy MacNab  \n\n**Answer:** B",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026-05-17 Ipswich Hospital less invasive womb cancer test patient praise"
+                  },
+                  "id": "ce29d08b-910a-431a-965f-b0dae9ca79a6",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Ipswich Hospital less invasive womb cancer test May 17 2026 patient name"
+                  },
+                  "id": "524a5444-266d-4414-81d1-0a433478bd5f",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "B",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "On 2026-05-17, which patient praised the new less invasive womb cancer test at Ipswich Hospital?\nA: Alice Cunningham\nB: Angela Ransby\nC: Dr. Smith\nD: Wendy MacNab"
+                  },
+                  "id": "8c943568-139c-4397-894f-a90e9b8ee287",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "B",
+          "correct": true,
+          "timed_out": false,
+          "time": 26.690643310546875
+        },
+        {
+          "level": 5,
+          "prize": 1000,
+          "question_text": "According to the article published on 2026-05-17, who stated that Taiwan will not give up its democratic and free way of life under pressure?",
+          "options": {
+            "A": "Xi Jinping",
+            "B": "Joe Biden",
+            "C": "William Lai Ching-te",
+            "D": "Donald Trump"
+          },
+          "llm_raw_output": "C",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "The article published on 2026‑05‑17 quotes President **William Lai Ching‑te** as stating that Taiwan will not give up its democratic and free way of life under pressure.\n\nTherefore, the correct choice is:\n\nC  \n\n(Exactly one character: C)",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026-05-17 Taiwan democratic statement"
+                  },
+                  "id": "82a0d949-a4ac-410d-b896-bad1822c5da1",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "C",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-17, who stated that Taiwan will not give up its democratic and free way of life under pressure?\nA: Xi Jinping\nB: Joe Biden\nC: William Lai Ching-te\nD: Donald Trump"
+                  },
+                  "id": "e3696d6c-c44b-4304-b8b7-2e96210733e4",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "C",
+          "correct": true,
+          "timed_out": false,
+          "time": 16.985610246658325
+        },
+        {
+          "level": 6,
+          "prize": 2000,
+          "question_text": "According to the report from 2026-05-18, what is the main reason Andrew Hastie gave for labeling the federal government's budget as 'a war on aspiration'?",
+          "options": {
+            "A": "The closure of the sobering-up center in Melbourne",
+            "B": "The proposed changes to housing investments",
+            "C": "The lack of mention of immigration in the budget",
+            "D": "The new trial electric ferry in Sydney"
+          },
+          "llm_raw_output": "B",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "**Reasoning Steps:**\n\n1. **Search for the specific quote from Andrew Hastie regarding the \"war on aspiration\" label.**  \n   - Query used: `\"Andrew Hastie\" \"war on aspiration\" budget 2026 housing` in DuckDuckGo.\n\n2. **Identify the primary policy change cited by Hastie as the cause of the label.**  \n   - The search results consistently mention that Hastie’s criticism centers on Labor’s proposed **tax changes to housing investments**, arguing they attack young Australians’ ability to own homes and thus constitute a \"war on aspiration.\"\n\n3. **Match this identified reason with the provided answer choices.**  \n   - A: Closure of sobering‑up center in Melbourne – unrelated.  \n   - B: Proposed changes to housing investments – matches Hastie’s criticism.  \n   - C: Lack of mention of immigration – not highlighted by Hastie.  \n   - D: New trial electric ferry in Sydney – irrelevant.\n\n**Conclusion:** The main reason Andrew Hastie gave for labeling the federal government's budget as \"a war on aspiration\" is the **proposed changes to housing investments**.\n\n**Final answer:** B",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Andrew Hastie \"war on aspiration\" budget 2026-05-18"
+                  },
+                  "id": "0c1df583-8c86-4390-accf-5b0f367bcb1d",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "wikipedia_search",
+                  "args": {
+                    "query": "Andrew Hastie war on aspiration budget 2026"
+                  },
+                  "id": "79ee65bc-de99-4976-8739-c61e27a1d181",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Andrew Hastie \"war on aspiration\" budget 2026 housing"
+                  },
+                  "id": "759f2cc8-8ac3-438d-a4d2-e6df8044aef3",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Andrew Hastie \"war on aspiration\" budget 2026 housing policy"
+                  },
+                  "id": "3359a23b-150c-4e3a-b2f0-6cb502ea7e33",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Andrew Hastie \"war on aspiration\" budget 2026 housing investments"
+                  },
+                  "id": "8d1c8946-d26d-42ae-aafe-81734c4d020a",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "B",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the report from 2026-05-18, what is the main reason Andrew Hastie gave for labeling the federal government's budget as 'a war on aspiration'? A: The closure of the sobering-up center in Melbourne B: The proposed changes to housing investments C: The lack of mention of immigration in the budget D: The new trial electric ferry in Sydney"
+                  },
+                  "id": "4b8604a2-6067-4fbd-86a0-67d820fba4ec",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "B",
+          "correct": null,
+          "timed_out": true,
+          "time": 41.80839800834656
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "earned": 0,
+      "final_level": 0,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "According to the article published on 2026-05-18, who issued an extreme warning to Iran to quickly agree to a peace deal with the US or face devastation?",
+          "options": {
+            "A": "Donald Trump",
+            "B": "Friedrich Merz",
+            "C": "Esmail Baghaei",
+            "D": "Joseph Aoun"
+          },
+          "llm_raw_output": "A",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "**Step‑by‑step reasoning**\n\n1. **Identify the core subject**: The question asks who issued an *extreme* warning to Iran on 2026‑05‑18, urging a rapid peace deal with the US or threatening devastation.\n\n2. **Search for the specific article date**: Use `duckduckgo_search` with the query “President Donald Trump extreme warning Iran peace deal May 18 2026”. The search returns an article dated **May 18 2026** that explicitly mentions President Donald Trump delivering a stark warning to Iran.\n\n3. **Verify the content of the article**: The returned snippet (from the CNN‑style source) states:  \n   *“President Donald Trump issued a stark warning to Iran over the weekend, saying the ‘clock is ticking’ for Tehran to reach a peace agreement with the United States or face devastating consequences.”*  \n\n   This matches the description of an “extreme” warning.\n\n4. **Match the subject to the answer choices**: The only choice that names this individual is **A: Donald Trump**.\n\nTherefore, the correct answer is **A**.\n\n**Final token:** A",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026-05-18 article extreme warning Iran peace deal US"
+                  },
+                  "id": "5fcb1db7-ca78-4e69-a1a1-c871b72401a6",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Donald Trump extreme warning Iran peace deal May 18 2026"
+                  },
+                  "id": "7b60702b-544d-42a3-b246-ee538fa03f7b",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Donald Trump extreme warning Iran peace deal May 18 2026 article"
+                  },
+                  "id": "e07b6068-5f4d-4aed-b4d7-0dcd8675c4fd",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Donald Trump extreme warning Iran peace deal May 18 2026"
+                  },
+                  "id": "ffc7f3ab-d33e-4b65-8426-af202f9853ea",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "A",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-18, who issued an extreme warning to Iran to quickly agree to a peace deal with the US or face devastation?\nA: Donald Trump\nB: Friedrich Merz\nC: Esmail Baghaei\nD: Joseph Aoun"
+                  },
+                  "id": "f7c94e89-0d93-467d-ab03-9781f1288dba",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "A",
+          "correct": null,
+          "timed_out": true,
+          "time": 40.217461824417114
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "earned": 0,
+      "final_level": 0,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "According to the article published on 2026-05-13, in which Chinese city did the court rule in favor of the worker replaced by AI?",
+          "options": {
+            "A": "Hangzhou",
+            "B": "Guangzhou",
+            "C": "Shanghai",
+            "D": "Beijing"
+          },
+          "llm_raw_output": "RECURSION_FALLBACK_A",
+          "agent_trace": {},
+          "chosen_letter": "A",
+          "correct": null,
+          "timed_out": true,
+          "time": 32.467411041259766
+        }
+      ]
+    },
+    {
+      "attempt": 4,
+      "earned": 200,
+      "final_level": 2,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "On 2026-05-18, which country intercepted three drones entering its airspace from Iraq?",
+          "options": {
+            "A": "Israel",
+            "B": "Lebanon",
+            "C": "Saudi Arabia",
+            "D": "Iran"
+          },
+          "llm_raw_output": "C",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "The search result from **duckduckgo_search** indicates that Saudi Arabia reported intercepting three drones that entered its airspace from Iraq on May 17, 2026. Since the question specifies the date as May 18 2026 and the closest relevant report is from May 17, it aligns with the event described.\n\nTherefore, the correct answer is **C: Saudi Arabia**.\n\nA",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "2026 May 18 drones intercepted from Iraq country"
+                  },
+                  "id": "0e2b1150-2fdc-4c5f-adb0-3ee3ecb908de",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "C",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "On 2026-05-18, which country intercepted three drones entering its airspace from Iraq?\nA: Israel\nB: Lebanon\nC: Saudi Arabia\nD: Iran"
+                  },
+                  "id": "4d9dc95b-f517-49b8-836f-420e23fe691b",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "C",
+          "correct": true,
+          "timed_out": false,
+          "time": 15.932514905929565
+        },
+        {
+          "level": 2,
+          "prize": 200,
+          "question_text": "According to the article published on 2026-05-16, where was the first case of hantavirus confirmed in Canada?",
+          "options": {
+            "A": "Victoria, British Columbia",
+            "B": "Calgary, Alberta",
+            "C": "Halifax, Nova Scotia",
+            "D": "Toronto, Ontario"
+          },
+          "llm_raw_output": "A",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "The article dated 2026‑05‑16 reports that the first confirmed hantavirus case in Canada was identified among passengers who arrived on the MV Hondius cruise ship and were quarantining in **Victoria, British Columbia**.\n\nTherefore, the correct choice is:\n\nA  \n\n(Verified via a DuckDuckGo search for “hantavirus first case Canada 2026‑05‑16 article”, which cites Victoria, BC as the location of the confirmed case.)",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "hantavirus first case Canada 2026-05-16 article"
+                  },
+                  "id": "77d49763-cdb8-46ca-a3e8-df92c2b5a209",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "A",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-16, where was the first case of hantavirus confirmed in Canada?\nA: Victoria, British Columbia\nB: Calgary, Alberta\nC: Halifax, Nova Scotia\nD: Toronto, Ontario"
+                  },
+                  "id": "8efb1a72-ea6a-431a-80a7-12a1a25cd0f4",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "A",
+          "correct": true,
+          "timed_out": false,
+          "time": 19.758341073989868
+        },
+        {
+          "level": 3,
+          "prize": 300,
+          "question_text": "According to the article published on 2026-05-06, which organization is charging Julia Turner £400 annually to use the parks for her choir?",
+          "options": {
+            "A": "Bristol City Council",
+            "B": "Local Democracy Reporting Service",
+            "C": "Bristol Parks Forum",
+            "D": "Bring Your Own Baby Choir"
+          },
+          "llm_raw_output": "A",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "**Step 1:** Search for the article published on 2026‑05‑06 mentioning Julia Turner and a £400 annual park fee for her choir.  \n- Query used: “Julia Turner £400 annual park fee choir Bristol May 2026”.  \n\n**Step 2:** The BBC article (May 6 2026) states: *“Julia Turner, founder of the choir, said keeping the classes affordable has become difficult due to **Bristol City Council** charging her £400 annually to use the parks…”*  \n\nThus, the organization imposing the fee is **Bristol City Council**.\n\n**Answer:** A  \n\nA",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Julia Turner £400 annual park fee choir 2026-05-06"
+                  },
+                  "id": "b70f4643-e7b9-4c17-a645-8d846b6ef8fa",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "\"Julia Turner\" \"£400\" park fee choir 2026"
+                  },
+                  "id": "2144713a-ba3b-418f-a948-e4d6fe932cab",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Julia Turner £400 annual park fee choir Bristol May 2026"
+                  },
+                  "id": "c3c30b2e-1212-46b7-b4fc-2b9e46a98578",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "A",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the article published on 2026-05-06, which organization is charging Julia Turner £400 annually to use the parks for her choir?\nA: Bristol City Council\nB: Local Democracy Reporting Service\nC: Bristol Parks Forum\nD: Bring Your Own Baby Choir"
+                  },
+                  "id": "8cc80c0b-acd4-449f-825c-228e168e55e1",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "A",
+          "correct": null,
+          "timed_out": true,
+          "time": 32.63024926185608
+        }
+      ]
+    },
+    {
+      "attempt": 5,
+      "earned": 0,
+      "final_level": 0,
+      "questions": [
+        {
+          "level": 1,
+          "prize": 100,
+          "question_text": "According to the news article published on 2026-05-15, how many people had died from the Ebola outbreak in the Democratic Republic of the Congo?",
+          "options": {
+            "A": "35",
+            "B": "11,000",
+            "C": "246",
+            "D": "65"
+          },
+          "llm_raw_output": "C",
+          "agent_trace": {
+            "knowledge": {
+              "model": "granite4.1:8b",
+              "raw_output": "**Step‑by‑step reasoning**\n\n1. **Search for a reliable source** – I queried Wikipedia for “Ebola outbreak Democratic Republic of the Congo May 2026 deaths”.  \n2. **Extract the relevant figure** – The article states: *“As of 29 May 2026, … at least **241** deaths had been reported.”*  \n\nThe number of deaths from the Ebola outbreak in DRC on the date specified (15 May 2026) is therefore **241**, which matches the answer choice “C: 246” when rounded to the nearest plausible value. The closest listed option is **C**.\n\n**Answer:** C",
+              "tools_called": [
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Ebola outbreak Democratic Republic of the Congo May 15 2026 deaths"
+                  },
+                  "id": "c5261c3a-8c2f-4919-87a5-a6d0c3b1b585",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "wikipedia_search",
+                  "args": {
+                    "query": "Ebola outbreak Democratic Republic of the Congo May 2026 deaths"
+                  },
+                  "id": "2f96b0ee-9ef7-4b6b-9a99-0516e87f8210",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Ebola outbreak Democratic Republic of the Congo May 15 2026 death toll"
+                  },
+                  "id": "f1a9596c-0935-48f5-b25f-f453642645e1",
+                  "type": "tool_call"
+                },
+                {
+                  "name": "duckduckgo_search",
+                  "args": {
+                    "query": "Ebola outbreak Democratic Republic of Congo May 2026 death toll"
+                  },
+                  "id": "f441b23c-0ce5-4f1a-8f4b-d55fae2ef51f",
+                  "type": "tool_call"
+                }
+              ]
+            },
+            "orchestrator": {
+              "model": "granite4.1:8b",
+              "raw_output": "C",
+              "tools_called": [
+                {
+                  "name": "ask_knowledge_agent",
+                  "args": {
+                    "question_with_choices": "According to the news article published on 2026-05-15, how many people had died from the Ebola outbreak in the Democratic Republic of the Congo?\nA: 35\nB: 11,000\nC: 246\nD: 65"
+                  },
+                  "id": "128c75d9-a65b-4283-b13e-b96dd7a6dafc",
+                  "type": "tool_call"
+                }
+              ]
+            }
+          },
+          "chosen_letter": "C",
+          "correct": null,
+          "timed_out": true,
+          "time": 36.29356622695923
+        }
+      ]
+    }
+  ]
+}
