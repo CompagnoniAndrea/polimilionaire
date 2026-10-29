@@ -1,7 +1,6 @@
 # PoliMillionaire: LLM Agents for a Quiz Game
 
-![Python](https://img.shields.io/badge/Python-3.12-blue) ![LLMs](https://img.shields.io/badge/LLMs-Qwen%20·%20Mistral%20·%20Llama%20·%20DeepSeek-8A2BE2) ![LangGraph](https://img.shields.io/badge/Agents-LangChain%20%2F%20LangGraph-1f6feb) ![Course](https://img.shields.io/badge/PoliMi-NLP%202025%2F26-lightgrey)
-
+![Python](https://img.shields.io/badge/Python-3.12-blue) ![LLMs](https://img.shields.io/badge/LLMs-Qwen%20·%20Mistral%20·%20Llama%20·%20DeepSeek-8A2BE2) ![LangGraph](https://img.shields.io/badge/Agents-LangChain%20%2F%20LangGraph-1f6feb)
 This repository contains open-source LLM systems that play **PoliMillionaire**, a *Who Wants to Be a Millionaire*-style quiz. Questions come from a game server through an API: 4 options, 15 increasing levels, 6 categories, and a **30-second limit** per answer.
 
 Starting from a plain zero-shot baseline, we improved the system one experiment at a time: model choice, prompting, calibration analysis, retrieval, tool use, fine-tuning and multi-agent orchestration. The result is a final **category-aware architecture** that picks the best strategy for each type of question.
