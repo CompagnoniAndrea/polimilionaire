@@ -1,2 +1,35 @@
-requests # HTTP library for making requests to the Millionaire API
-python-dotenv # Library for loading environment variables from a .env file
+# Game API client
+requests
+python-dotenv
+
+# Models & inference
+torch
+transformers
+accelerate
+bitsandbytes
+huggingface_hub
+datasets
+ollama
+
+# Agents & retrieval
+langchain
+langchain-core
+langchain-ollama
+langgraph
+wikipedia
+ddgs
+rank_bm25
+sentence-transformers
+beautifulsoup4
+httpx
+
+# Audio
+openai-whisper
+
+# Analysis & plotting
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+plotly
